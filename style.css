@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+.canvas-wrapper {
+  background-color: #1a1221;
+  height: 100%;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+  position: relative;
+}
+
+h1 {
+  font: 90px 'Share Tech Mono', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFF;
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+span {
+  -webkit-animation: blink 0.5s linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+}
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+}
